@@ -5,7 +5,7 @@
 ## ADBC Transaction Access Point (TAP) Specification V1
 
  * ![raw](http://rfc.unprotocols.org/spec:2/COSS/raw.svg)
- * Editor: 
+ * Editor: the Digital Business Council (Council)
  * Contributors: 
 
 This document describes a protocol for exchanging formal documents (such as invoices) between businesses. TAP is a secure, decentralised, peer to peer architecture where gateways are optional and minimally trusted.
@@ -20,6 +20,8 @@ The Access Point Implementation Guide defines the standards for delivering and r
 
 ![Figure 1: Context of Access Points within the Interoperability Framework](./tap_business_context_diagram.png "Figure 1: Context of Access Points within the Interoperability Framework")
 
+Figure 1: Context of Access Points within the Interoperability Framework
+
 The messaging protocol described in this document is business process and business document agnostic. The underlying OASIS ebMS3 standard has been designed to be flexible and support a large number of use cases. This implementation guide reduces complexity by focusing on the exchange of business documents regardless of their type or the process in which they are used.
 
 The context diagram Figure 1 shows the components included in the Interoperability Framework and where the Access Point (AP) sits. The Digital Capability Publisher and Digital Capability Locator are used by the Access Points and enable the eInvoicing process.
@@ -28,23 +30,15 @@ The components of the framework are used in a four-corner model (see Figure 2: F
 
 ![Figure 2: Four Corner Model](./tap_four_corner_model.png "Figure 2: Four Corner Model")
 
+Figure 2: Four Corner Model
+
 See the complete [Access Point Implementation Guide](./https://github.com/ausdigital/ausdigital-ubl-xml/blob/master/Access_Point_Implementation_Guide_v1.0.pdf) for further details.
 
 ## Licence
 
 Copyright (c) 2016 the Editor and Contributors. All rights reserved.
 
-This Specification is free software; you can redistribute it and/or modify it under the
-terms of the GNU General Public License as published by the Free Software Foundation; 
-either version 3 of the License, or (at your option) any later version.
-
-This Specification is distributed in the hope that it will be useful, but WITHOUT ANY
-WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
-PURPOSE. See the GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License along with this program;
-if not, see [http://www.gnu.org/licenses](http://www.gnu.org/licenses).
-
+This work is licensed under a Creative Commons Attribution 4.0 International License.
 
 ## Change Process
 
