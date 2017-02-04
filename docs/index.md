@@ -8,15 +8,22 @@
  * Editor: the Digital Business Council (Council)
  * Contributors: 
 
+##Glossary:
+
+phrase | Definition
+------------ | -------------
+ausdigital-dcl/1 | Version 1 of the [AusDigtial](http://ausdigital.org) [DCL](https://ausdigital-dcl.readthedocs.io) specification
+ausdigital-dcp/1 | Version 1 of the [AusDigtial](http://ausdigital.org) [DCP](https://ausdigital-dcp.readthedocs.io) specification
+
 This document describes a protocol for exchanging formal documents (such as invoices) between businesses. TAP is a secure, decentralised, peer to peer architecture where gateways are optional and minimally trusted.
 
 ## Overview
 
 The Access Point Implementation Guide defines the standards for delivering and receiving of digital business documents within the Council’s Interoperability Framework (Framework). The Framework defines the following components:
-* Access Point: A sender or receiver of digital business documents;
-* Digital Capability Locator: A service for looking up the location of the Digital Capability Publisher for a Participant. (Digital Business Council, 2016a);
-* Digital Capability Publisher: A service for Participants to store details of their capabilities, and includes what scenarios they can process, the data formats they support and the delivery address for their eInvoices. (Digital Business Council, 2016b); and
-* Electronic Business Documents: A digital representation of a business document, e.g. an eInvoice.
+ * Access Point: A sender or receiver of digital business documents;
+ * Digital Capability Locator: A service for looking up the location of the Digital Capability Publisher for a Participant. (Digital Business Council, 2016a);
+ * Digital Capability Publisher: A service for Participants to store details of their capabilities, and includes what scenarios they can process, the data formats they support and the delivery address for their eInvoices. (Digital Business Council, 2016b); and
+ * Electronic Business Documents: A digital representation of a business document, e.g. an eInvoice.
 
 ![Figure 1: Context of Access Points within the Interoperability Framework](./tap_business_context_diagram.png "Figure 1: Context of Access Points within the Interoperability Framework")
 
@@ -26,7 +33,7 @@ The messaging protocol described in this document is business process and busine
 
 The context diagram Figure 1 shows the components included in the Interoperability Framework and where the Access Point (AP) sits. The Digital Capability Publisher and Digital Capability Locator are used by the Access Points and enable the eInvoicing process.
 
-The components of the framework are used in a four-corner model (see Figure 2: Four Corner Model). End users, or participants, don’t directly exchange electronic information but connect through a network of Access Points. The digital address for a receiving Access Point is dynamically discovered using the Digital Capability Locator (DCL) and Digital Capability Publisher(DCP) components of the Framework. Access Points may also update a participant’s digital endpoint in the DCP.
+The components of the framework are used in a four-corner model (see Figure 2: Four Corner Model). End users, or participants, don’t directly exchange electronic information but connect through a network of Access Points. The digital address for a receiving Access Point is dynamically discovered using ausdigital-dcp/1 and ausdigital-dcp/1 components of the Framework. Access Points may also update a participant’s digital endpoint in the DCP.
 
 ![Figure 2: Four Corner Model](./tap_four_corner_model.png "Figure 2: Four Corner Model")
 
